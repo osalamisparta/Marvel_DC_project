@@ -9,7 +9,10 @@ def transform_data(csv_file_name):
         for character in character_details:
             selected_data.append(character[1])
 
-    print(selected_data)
+    # print(selected_data)
+    return selected_data
 
 
-transform_data('marvel_characters_info.csv')
+marvel_names_list = transform_data('marvel_characters_info.csv')
+
+
