@@ -32,8 +32,8 @@ with open('character_strength.json', 'w') as jsonfile:
     jsonfile.write(json.dumps(character_strength_data))
 
 
-# Extracting only Marvel characters from 'character_strength_data' list
-def get_marvel_characters(csv_file_name):
+# Seperating DC and Marvel characters from 'character_strength_data' list
+def seperate_marvel_and_dc_characters(csv_file_name):
     marvel_character_data = []
     dc_character_data = []
 
@@ -62,4 +62,4 @@ def get_marvel_characters(csv_file_name):
     print('------------------------------------')
     print(dc_character_data)
 
-get_marvel_characters('charcters_stats.csv')
+seperate_marvel_and_dc_characters('charcters_stats.csv')
