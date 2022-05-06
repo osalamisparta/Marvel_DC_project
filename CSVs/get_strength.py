@@ -12,9 +12,15 @@ def transform_data(csv_file_name):
             to_selected_data.append(character[0])
             to_selected_data.append(character[3])
 
-            selected_data.append(to_selected_data)
+            to_selected_data_dict = {
+                'name': character[0],
+                'strength': character[3]
+            }
+
+            selected_data.append(to_selected_data_dict)
+            # selected_data.append(to_selected_data)
 
     print(selected_data)
 
 
-transform_data('charcters_stats.csv')
+character_strength_data = transform_data('charcters_stats.csv')
