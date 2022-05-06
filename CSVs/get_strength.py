@@ -59,10 +59,10 @@ def seperate_marvel_and_dc_characters(csv_file_name):
                 dc_character_data.append(to_new_character_data)
 
     with open('marvel_character_strength_data.json', 'w') as jsonfile:
-        jsonfile.write(json.dumps(marvel_character_data[0]))
+        jsonfile.write(json.dumps(marvel_character_data))
 
     with open('dc_character_strength_data.json', 'w') as jsonfile:
-        jsonfile.write(json.dumps(dc_character_data[0]))
+        jsonfile.write(json.dumps(dc_character_data))
 
     # print(marvel_character_data)
     # print('------------------------------------')
